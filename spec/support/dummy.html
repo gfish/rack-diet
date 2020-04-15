@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html class="js shame-magnific-popup" lang="en-DK">
+<head>
+
+    <script>
+        // Should be placed before the Google Analytics initialization
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+            'userId': '',
+            'dimension1': '',
+            'dimension2': 'is_organizer='
+        })
+    </script>
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KQ7VFP');
+    </script>
+
+   <meta content="en-DK" property="locale">
+    <link href="http://billetto.test/locales/en.json" rel="prefetch">
+    <link href="http://billetto.test/da" hreflang="da-DK" rel="alternate">
+
+
+    <script src="//d2wy8f7a9ursnm.cloudfront.net/v4/bugsnag.min.js"></script>
+    <script>
+        window.bugsnagClient = bugsnag({
+            apiKey: "d1dcfb77bd2d723d2a66e4d9f4283142",
+            releaseStage: "development",
+            notifyReleaseStages: ["staging", "production"]
+        })
+    </script>
+
+
+    <script>
+        !function () {
+            var analytics = window.analytics = window.analytics || [];
+            if (!analytics.initialize) if (analytics.invoked) window.console && console.error && console.error("Segment snippet included twice."); else {
+                analytics.invoked = !0;
+                analytics.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "debug", "page", "once", "off", "on"];
+                analytics.factory = function (t) {
+                    return function () {
+                        var e = Array.prototype.slice.call(arguments);
+                        e.unshift(t);
+                        analytics.push(e);
+                        return analytics
+                    }
+                };
+                for (var t = 0; t < analytics.methods.length; t++) {
+                    var e = analytics.methods[t];
+                    analytics[e] = analytics.factory(e)
+                }
+                analytics.load = function (t) {
+                    var e = document.createElement("script");
+                    e.type = "text/javascript";
+                    e.async = !0;
+                    e.src = ("https:" === document.location.protocol ? "https://" : "http://") + "cdn.segment.com/analytics.js/v1/" + t + "/analytics.min.js";
+                    var n = document.getElementsByTagName("script")[0];
+                    n.parentNode.insertBefore(e, n)
+                };
+                analytics.SNIPPET_VERSION = "4.0.0";
+                analytics.load("7S8Zldg3GP4p2dLByHIXYslmE846i8a2");
+            }
+        }();
+    </script>
+
+
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <title>Discover the best events | Billetto Dev</title>
+    <meta content="Billetto helps you go out more. With 1000s of great social activities you are almost guaranteed to find the right event for you and your friends. Organising events? Start selling tickets in 5 minutes."
+          name="description"/>
+    <link href="http://billetto.test/" rel="canonical"/>
+
+    <meta name="csrf-param" content="authenticity_token"/>
+    <meta name="csrf-token"
+          content="X9RYhD8JaNqOqbFUV4VADJ9TQ+CMaKkdvfobRrh0ndZ+ntSNdscvQZybR3+WRZB/qYu/tx8ldrL1i0vPb9aIsg=="/>
+
+    <meta content="http://billetto.test/" property="og:url">
+    <meta content="website" property="og:type">
+    <meta content="Discover the best events | Billetto Dev" property="og:title">
+    <meta content="Billetto Dev" property="og:site_name">
+    <meta content="Billetto helps you go out more. With 1000s of great social activities you are almost guaranteed to find the right event for you and your friends. Organising events? Start selling tickets in 5 minutes."
+          property="og:description">
+    <meta content="125114500839620" property="fb:app_id">
+
+    <link rel="shortcut icon" type="image/x-icon"
+          href="http://billetto.test/assets/favicon-19f27822e9975d64328927717b56eef87a419091f5afaf8761ffed761af98129.ico"/>
+    <link rel="apple-touch-icon" type="image/png"
+          href="http://billetto.test/assets/apple-touch/apple-touch-icon-57af4af886effac1aa787a05ce43b34581a4610d72d36041b87606b2c61ee3cd.png"/>
+    <link rel="apple-touch-icon" type="image/png"
+          href="http://billetto.test/assets/apple-touch/apple-touch-icon-57x57-57af4af886effac1aa787a05ce43b34581a4610d72d36041b87606b2c61ee3cd.png"
+          sizes="57x57"/>
+    <link rel="apple-touch-icon" type="image/png"
+          href="http://billetto.test/assets/apple-touch/apple-touch-icon-72x72-bc1a3148fad6792dde3c08e6be06296f5abb75999444dfeb459accbfc797022a.png"
+          sizes="72x72"/>
+    <link rel="apple-touch-icon" type="image/png"
+          href="http://billetto.test/assets/apple-touch/apple-touch-icon-76x76-98245eb7de5bce9dda2586d435bfd3cfed7136233e81ba8270ce0104a80f7270.png"
+          sizes="76x76"/>
+    <link rel="apple-touch-icon" type="image/png"
+          href="http://billetto.test/assets/apple-touch/apple-touch-icon-114x114-c8e574b66aae99bb1c224d2dc124f468d6b99c6f0b750d52e87eeb5738aa2361.png"
+          sizes="114x114"/>
+    <link rel="apple-touch-icon" type="image/png"
+          href="http://billetto.test/assets/apple-touch/apple-touch-icon-120x120-658bae76969de3a156df7a72a387223d33431fdd56b881b88cd30215df1f277d.png"
+          sizes="120x120"/>
+    <link rel="apple-touch-icon" type="image/png"
+          href="http://billetto.test/assets/apple-touch/apple-touch-icon-144x144-e07df04d9b894602299bd7634b59247ac77f52a896e56e07bf9a94158bd76d33.png"
+          sizes="144x144"/>
+    <link rel="apple-touch-icon" type="image/png"
+          href="http://billetto.test/assets/apple-touch/apple-touch-icon-152x152-bb4b2b48ba3d01a9df0e20fbb463e059acc751c24e81bf5569d5f83c1c3d71f5.png"
+          sizes="152x152"/>
+    <link rel="apple-touch-icon" type="image/png"
+          href="http://billetto.test/assets/apple-touch/apple-touch-icon-180x180-4f4e73abd800f205f7db474268be4a202eac182588037fdfb525349b68781693.png"
+          sizes="180x180"/>
+    <link rel="stylesheet" media="screen"
+          href="http://billetto.test/assets/application-3d23b31f0d07dd99e3fae32d448b03c62d0617c1c64993b84630304fe1bf03c6.css"/>
+    <script src="http://billetto.test/assets/head-dc08e25f10285cb175b1af448e6d3afb7cf2aa82cc90c64bf910a99be067252b.js"></script>
+    <link rel="stylesheet" media="screen" href="https://api.mapbox.com/mapbox-gl-js/v0.19.1/mapbox-gl.css" />
+
+
+  <script>
+        window._organizationCountry = "Billetto Development";
+    </script>
+
+
+    <script type="text/javascript">
+        var Analytical = {
+            track: function (page) {
+                if (typeof(console) !== 'undefined' && console != null) {
+                    console.log("Analytical Track: " + page);
+                }
+            },
+            event: function (name, data) {
+                if (typeof data === 'undefined') {
+                    data = {};
+                }
+                if (typeof(console) !== 'undefined' && console != null) {
+                    console.log("Analytical Event: " + name);
+                    console.log(data);
+                }
+            }
+        };
+    </script>
+
+    <meta name="apple-itunes-app" content="app-id=722356903, app-argument=search">
+</head>
+<body class="controller-search action-newfrontpage" data-organization="billetto.test">
+
+
+<noscript>
+    <iframe height="0" src="//www.googletagmanager.com/ns.html?id=GTM-KQ7VFP" style="display:none;visibility:hidden"
+            width="0"></iframe>
+</noscript>
+
+<div class="app-header">
+
+    <div class="app-header__content">
+        <div class="app-header__content-container chamber--left">
+            <div class="app-header__logo push-_5x--right float--left">
+                <a class="display--block" href="http://billetto.test/" style="line-height: 1em;">
+                    <img alt="Billetto" class="u-height-2x"
+                         src="http://billetto.test/assets/logos/billetto_light.min-66c5110daf2d8b9c3429a09c95a5c1743c247db4e64d8f001425ba6545d720d2.svg"
+                         width="72">
+                </a>
+            </div>
+
+            <div class="float--left clearfix">
+                <a class="app-header__link float--left" href="/">
+                    Search
+                </a>
+            </div>
+
+
+            <div class="user-menu float--right chamber-half--right">
+                <div class="float--left">
+                    <a class="app-header__link--create-event" href="/e/new">
+                        <img class="app-header__icon" height="24"
+                             src="http://billetto.test/assets/menu/menu_add-b6e08992f72c539c43fd57871db48389bd1d7635e4e2ac5538d2ace580e36658.svg"
+                             width="24">
+                        Create event
+                    </a>
+                </div>
+                <div class="float--left">
+                    <div class="float--left" data-app="sign_in-app-link">
+<span class="app-header__button">
+Login / Signup
+</span>
+                    </div>
+                    <div data-app="sign_in-app-form"
+                         data-json="{&quot;modal&quot;:true,&quot;show_form&quot;:false,&quot;variant&quot;:&quot;modal&quot;,&quot;appId&quot;:&quot;231436347010575&quot;}"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<div class="clearfix" id="js-content">
+
+    <!--[if lte IE 8]>
+    <div class="container chamber">
+        <div class="row-fluid">
+            <div class="span1"></div>
+            <div class="span10">
+                <div class="app-card chamber text--center typography--push-bottom">
+                    <h1>Looks like your browser is getting a bit rusty</h1>
+                    <p>Billetto is built with the latest techniques and technology which makes it faster and easier to
+                        use, but this means that older browsers won’t work.</p>
+                    <p>You will need to update your browser to use Billetto. Download one of these great browsers to get
+                        going:</p>
+                    <div class="row-fluid display--block">
+                        <div class="span4">
+                            <a href="http://windows.microsoft.com/ie" target="_blank">
+                                <img src="http://billetto.test/assets/components/upgrade_ie/ie-dc002584b6cd2a15ba2c619f11a41fbd9ccffbf97a2304b36643ae7b11b5ff31.png">
+                                <div class="display--block">
+                                    <strong>Internet Explorer</strong>
+                                </div>
+                                <p class="muted">Update</p>
+                            </a>
+                        </div>
+                        <div class="span4">
+                            <a href="http://www.google.com/chrome" target="_blank">
+                                <img class="img--center"
+                                     src="http://billetto.test/assets/components/upgrade_ie/chrome-18192597c7ea702557870b50a3e32336d9fcdf6901e2acd7bade496cf151e10b.png">
+                                <div class="display--block">
+                                    <strong>Google Chrome</strong>
+                                </div>
+                                <p class="muted">Download</p>
+                            </a>
+                        </div>
+                        <div class="span4">
+                            <a href="http://www.firefox.com" target="_blank">
+                                <img class="img--center"
+                                     src="http://billetto.test/assets/components/upgrade_ie/firefox-9b54bf21bfe9e2d2e77b22768425697bfea174e4b4daa119adcf5ffc70fcb24e.png">
+                                <div class="display--block">
+                                    <strong>Mozilla Firefox</strong>
+                                </div>
+                                <p class="muted">Download</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <![endif]-->
+
+
+    <div data-app="notification" data-notifications="[]"></div>
+
+
+    <script>
+        window.pageName = "Frontpage";
+    </script>
+    <script>
+        window.pageProperties = {"identity_id": null, "user_id": null};
+    </script>
+    <script>
+        window.pageTargetGroup = "b2c"
+    </script>
+
+    <div class="search-filter" data-app="search"
+         data-props="{&quot;likeBox&quot;:false,&quot;admin&quot;:null,&quot;likedEventIds&quot;:null,&quot;location&quot;:&quot;Wrocław, Poland&quot;,&quot;locationLatLng&quot;:&quot;51.1078852,17.0385376&quot;,&quot;distance&quot;:null,&quot;organization_id&quot;:1,&quot;currency&quot;:&quot;DKK&quot;,&quot;app_id&quot;:&quot;1HZ1915MZ6&quot;,&quot;api_key&quot;:&quot;b07362ef010bf6ad92678719011b9a74&quot;,&quot;index_name&quot;:&quot;events&quot;}"></div>
+    <div class="chamber-half--top">
+        <div class="grid-container push-_5x--top">
+            <div class="grid grid--full">
+                <div class="grid__item one-third">
+                    <input type="text" name="text" id="new_search"
+                           class="new_search_input js-search__text push-_5x--bottom" placeholder="Search"/>
+                </div>
+                <div class="grid__item one-third">
+                    <div class="search-menu-items">
+                        <div class="menu_filter_date search-menu-item"></div>
+                    </div>
+                </div>
+                <div class="grid__item one-third">
+                    <div class="search-category-dropdown js-showhideable">
+                        <p class="search-menu-item search-menu-items search-category-dropdown__trigger js-showhideable__btn text--right">
+                            <i class="font-awesome fa fa-angle-down muted push-_25x--right"></i>
+                            Categories
+                        </p>
+                        <div class="app-card search-category-dropdown__content js-showhideable__content">
+                            <div class="category_search_filter_menu typography--milli"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="separator--thin separator--light">
+        </div>
+    </div>
+    <div class="chamber--top editorial">
+        <div class="grid-container">
+
+            <h1 class="typography--eta typography--regular chamber-half--bottom">Trending</h1>
+            <div class="row-fluid chamber-double--bottom" data-event-list="trending_events_widget"
+                 data-widget-title="Trending" data-widget-type="trending_events_widget">
+            </div>
+
+            <div class="row-fluid chamber-half--bottom">
+                <div class="span10">
+                    <h1 class="typography--eta typography--regular">
+                        Upcoming events
+                    </h1>
+                </div>
+                <div class="span2 text--right">
+                    <a class="typography--milli" href="/upcoming_events">See all</a>
+                </div>
+            </div>
+            <div class="chamber--bottom"></div>
+
+
+        </div>
+    </div>
+    <div class="new-search-results-container grid-container">
+        <div class="new-search-results is-hidden">
+            <div class="grid">
+                <div class="grid__item eight-twelfths">
+                    <div id="stats-container"></div>
+                    <div id="hits_container"></div>
+                </div>
+                <div class="grid__item four-twelfths">
+                    <a class="typography--milli text--center display--block" href="/">
+                        <i class="font-awesome fa fa-times-sign"></i>
+                        Reset
+                    </a>
+                    <hr class="separator--thin separator--light push-2x--ends">
+                    <div class="mobile__chamber-one--sides">
+                        <h3 class="app-label--small">
+                            City or Location
+                        </h3>
+                        <input type="text" name="location" id="location" value="Wrocław, Poland"
+                               class="new_search_location_input app-input-text js-search__text" placeholder="Nearby"/>
+                        <h3 class="app-label--small">
+                            Distance (km)
+                        </h3>
+                        <input type="text" name="distance" id="distance" class="app-input-text js-search__text"
+                               placeholder="Max"/>
+                    </div>
+                    <hr class="separator--thin separator--light push-2x--ends">
+                    <div id="start_date_filter"></div>
+                    <hr class="separator--thin separator--light push-2x--ends">
+                    <div id="price_search_filter"></div>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="grid__item one-whole">
+                    <div id="pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="site-footer">
+
+    <div class="container">
+        <div class="row-fluid">
+        </div>
+        <hr class="muted separator--thin push-2x--top push--bottom">
+        <div class="row-fluid typography--milli">
+            <div class="span9">
+                <a class="site-footer__link--internal float--left push--right" href="/pages/support" target="_blank">Support</a>
+                <a class="site-footer__link--internal float--left push--right" href="/e/new">Create</a>
+                <a class="site-footer__link--internal float--left push--right" href="/pages/prices">Pricing</a>
+                <a class="site-footer__link--internal float--left push--right" href="/pages/jobs">Jobs</a>
+                <a class="site-footer__link--internal float--left push--right" href="/newsletters/new">Newsletter
+                    signup</a>
+                <a class="site-footer__link--internal float--left push--right" href="/pages/app">Go mobile</a>
+                <a class="site-footer__link--internal float--left push--right" href="/pages/terms">Terms</a>
+                <a class="site-footer__link--internal float--left push--right" href="/pages/event_terms">Event terms</a>
+                <a class="site-footer__link--internal float--left push--right" href="/blog">Blog</a>
+            </div>
+            <div class="span3">
+
+                <div class="app-dropup">
+                    <i class="font-awesome fa fa-globe"></i>
+                    English
+                    <span class="float--right">
+<i class="font-awesome fa fa-angle-up"></i>
+</span>
+                    <ul class="app-dropup__list">
+                        <li class="app-dropup__list-item">
+                            <a href="/en">English</a>
+                        </li>
+                        <li class="app-dropup__list-item">
+                            <a href="/da">Dansk</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <hr class="muted separator--thin push--top push-2x--bottom">
+        <div class="row-fluid">
+            <div class="span9">
+                <p class="muted typography--micro">Billetto ApS
+                    Vesterbrogade 20, 3. tv
+                    1620 København V
+                    DENMARK
+                    Company no: CVR-nr DK32569080</p>
+            </div>
+            <div class="span3">
+                <div class="text--right">
+                    <a class="app-btn app-btn--facebook app-btn--small footer-btn push--left"
+                       href="http://www.facebook.com/billetto.dk" target="_blank">
+                        <i class="fa fa-facebook font-awesome--big"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="app-admin">
+
+
+</div>
+
+<script type="text/javascript">
+    if (typeof(console) !== 'undefined' && console != null) {
+        console.log('Analytical Init: Console');
+    }
+</script>
+
+
+<div class="loader__container is-hidden" id="js-loader"></div>
+
+
+<script src="http://localhost:8080/javascripts/vendor.js"></script>
+<style>
+    /* antd is setting this to noen, we might need to reset them back for certain components... */
+    ul {
+        list-style-type: disc;
+        margin: 1em 0;
+        padding: 0 0 0 40px;
+    }
+
+    ol {
+        list-style-type: decimal;
+        margin: 1em 0;
+        padding: 0 0 0 40px;
+    }
+
+    .ant-select ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .ant-select-dropdown ul {
+        margin: 0;
+        padding: 0;
+    }
+</style>
+
+<script src="http://billetto.test/assets/application-84cdce60a6a7aa7eacf222dce2a3882c393029164f9674284d6a4824937ded3a.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+<script>
+    if (window.WebFont) {
+        WebFont.load({
+            google: {
+                families: ['Roboto Mono:400', 'Roboto:300,400,400italic,500,700,700italic']
+            }
+        });
+    }
+</script>
+
+
+<script>
+    analytics.ready(function () {
+        window.pageName = window.pageName || null;
+        window.pageCategory = window.pageCategory || null;
+        window.pageProperties = window.pageProperties || {};
+        window.pageTargetGroup = window.pageTargetGroup || "all";
+        window.pageProperties.hostname = window.location.hostname;
+
+        if (window.pageTargetGroup == "b2b" || window.pageTargetGroup == "all") {
+            analytics.page(window.pageCategory, window.pageName, window.pageProperties);
+        }
+    });
+</script>
+
+
+<script src="http://localhost:8080/javascripts/facebook.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;libraries=places&amp;key=AIzaSyCnhtt3ind569i-SJz3wFcox-NUCA8bL_M"></script>
+
+<script src="http://localhost:8080/javascripts/new_search.js"></script>
+<script src="/javascripts/sign_in.js"></script>
+<script src="http://localhost:8080/javascripts/notification.js"></script>
+
+
+</body>
+</html>
