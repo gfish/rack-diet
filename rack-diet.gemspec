@@ -6,19 +6,11 @@ Gem::Specification.new do |spec|
   spec.name = "rack-diet"
   spec.version = Rack::Diet::VERSION
   spec.authors = ["Billetto"]
-  spec.email = ["development@billetto.dk"]
+  spec.homepage = 'https://github.com/gfish/rack-diet'
+  spec.email = ["development@billetto.com"]
 
   spec.summary = %q{Disable CSS3 animations and filter out external JavaScript downloads. Helpful for reliable testing with Capybara.}
   spec.license = "MIT"
-
-  # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
-  # to allow pushing to a single host or delete this section to allow pushing to any host.
-  if spec.respond_to?(:metadata)
-    spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
-  else
-    raise "RubyGems 2.0 or newer is required to protect against " \
-      "public gem pushes."
-  end
 
   spec.files         = Dir["lib/**/*"]
   spec.require_paths = ["lib"]
